@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 BTC - LTC 1 Min. Moving Avg.
+  div#exchange Loading...
+  div.currencyInputs
+    div.currencyInput
+      input(type="text" id="cur1" value="BTC")
+    div.currencyInput
+      input(type="text" id="cur2" value="LTC")
+  div.changePair
+    button(onclick="reset()") Track This Exchange Rate
